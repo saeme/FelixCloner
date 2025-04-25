@@ -15,7 +15,7 @@ find_package(GTest REQUIRED)
 enable_testing()
 
 # Add the test executable
-add_executable(tests test.cpp ../src/felix.cpp ../src/matrix.cpp)
+add_executable(tests test.cpp ../src/felix.cpp ../src/matrix.cpp ../src/utils.cpp)
 
 # Include directories for the test executable
 target_include_directories(tests PRIVATE ${GTEST_INCLUDE_DIRS} ../include)
